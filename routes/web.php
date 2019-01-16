@@ -17,3 +17,5 @@ Route::get('/', function () {
 
 Route::resource('client','ClientController');
 Route::resource('delivery','DeliveryController');
+
+Route::get('delivery/route/{id}', 'DeliveryController@route');

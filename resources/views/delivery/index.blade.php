@@ -32,15 +32,12 @@
     <tbody>
 
       @foreach($deliverys as $delivery)
-      @php
-        $date=date('Y-m-d', $delivery['delivery_date']);
-        @endphp
       <tr>
         <td>{{$delivery['id']}}</td>
         <td>{{$delivery['client_id']}}</td>
         <td>{{$delivery['origin']}}</td>
         <td>{{$delivery['destiny']}}</td>
-        <td>{{$date}}</td>
+        <td>{{$delivery['delivery_date']}}</td>
         
         <td><a href="{{action('DeliveryController@route', $delivery['id'])}}" class="btn btn-info">Traçar Rota</a></td>
 

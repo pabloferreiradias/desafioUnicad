@@ -87,6 +87,8 @@ class DeliveryController extends Controller
     public function route($id)
     {
         $delivery = Delivery::find($id);
-        return view('delivery.edit',compact('delivery','id'));
+        $origin = $delivery->origin;
+        $destiny = $delivery->destiny;
+        return view('delivery.route',compact('origin','destiny'));
     }
 }
