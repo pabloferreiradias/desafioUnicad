@@ -18,4 +18,4 @@ Route::get('delivery/route/{id}', 'DeliveryController@route');
 
 Auth::routes();
 
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/', 'DeliveryController@index');
