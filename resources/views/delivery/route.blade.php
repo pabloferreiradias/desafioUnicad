@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <link rel="stylesheet" href="{{secure_asset('css/app.css')}}">
     <meta charset="utf-8">
     <title>Directions Service</title>
     <style>
