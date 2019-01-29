@@ -14,7 +14,7 @@
     <div class="container">
       <h2>Criar Entrega:</h2><br/>
       <form method="post" action="{{url('delivery')}}" enctype="multipart/form-data">
-        
+        {{ csrf_field() }}
         <div class="row">
           <div class="col-md-4"></div>
           <div class="form-group col-md-4">

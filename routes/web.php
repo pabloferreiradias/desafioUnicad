@@ -11,11 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::resource('client','ClientController');
 Route::resource('delivery','DeliveryController');
 
 Route::get('delivery/route/{id}', 'DeliveryController@route');
+
+Auth::routes();
+
+Route::get('/', 'HomeController@index')->name('home');

@@ -10,6 +10,7 @@
     <div class="container">
       <h2>Editar Cliente:</h2><br  />
         <form method="post" action="{{action('ClientController@update', $id)}}">
+        {{ csrf_field() }}
         <input name="_method" type="hidden" value="PATCH">
         <div class="row">
           <div class="col-md-4"></div>

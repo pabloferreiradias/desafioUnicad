@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
   </head>
   <body>
+  @include('menu')
     <div class="container">
     <br />
     @if (\Session::has('success'))
